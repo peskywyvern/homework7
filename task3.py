@@ -4,7 +4,7 @@
 
 
 def detect_palindromes(strings_list):
-    return {word: word[0] == word[-1] for word in strings_list}
+    return {word: word == word[::-1] for word in strings_list}
 
 
 assert detect_palindromes(['madam', 'joy', 'fish']) == {

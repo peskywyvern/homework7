@@ -3,8 +3,7 @@
 
 
 def change_case(string1):
-    return ''.join(letter.upper()if letter.islower() else letter.lower()
-                   for letter in string1)
+    return ''.join(letter.swapcase() for letter in string1)
 
 
 assert change_case("HELLO") == "hello"
